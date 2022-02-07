@@ -2,11 +2,45 @@
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
 	margin-top: 0;
 	line-height: 1.1;
+	font-family:var(--font-heading);
 }
 
+//Headings colours
+h1 {
+	color: var(--hero-white);
+}
+
+.h-w {
+	color: var(--hero-white);
+}
+
+.h-g {
+	color:var(--txt-grey);
+}
+
+
+//Paragraphs colours
+
+.p-g {
+	color: var(--txt-grey);
+}
+
+// Hero section
+.p-hw {
+color:var(--hero-white);
+}
+
+// Create Plan page
+.p-cpw {
+	color: var(--white);
+}
+
+
+// Anchors
 a,
 a:visited,
 a:active {

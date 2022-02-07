@@ -1,16 +1,22 @@
 html {
-	font-size: 100%;
+	font-size: 62.5%;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
 	box-sizing: inherit;
+	margin: 0;
+    padding: 0;
 }
 
 body {
 	margin: 0;
 	padding: 0;
-	background-color: red;
+	font-family: var(--font-p);
+	overflow-x: hidden;
 }
+	
+	
