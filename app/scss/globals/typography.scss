@@ -15,11 +15,11 @@ h1 {
 	font-size: 4rem;
 	line-height: 4rem;
 
-	 @media screen and (min-width:758px) {
+	@include breakpoint(tablet){
 		font-size: 4.8rem;
 		line-height: 4.8rem;
 	 }
-	 @media screen and (min-width:1440px) {
+	 @include breakpoint(desktop) {
 		font-size: 7.2rem;
 		line-height: 7.2rem;
 	 }
@@ -30,7 +30,7 @@ h2 {
 	font-size: 3.2rem;
 	line-height: 4.8rem;
 
-	 @media screen and (min-width:1440px) {
+	@include breakpoint(desktop) {
 		font-size: 4rem;
 		line-height: 4.8rem;
 	 }
@@ -39,17 +39,18 @@ h2 {
 h3 {
 	font-size: 2.8rem;
 
-	@media screen and (min-width:1440px) {
+	@include breakpoint(desktop){
 		font-size: 3.2rem;
-		
-	 }
+	}
 
 }
+		
 
 h4 {
 	font-size:2.4rem;
 	line-height: 3.2rem;
 }
+
 .h-w {
 	color: var(--hero-white);
 }
