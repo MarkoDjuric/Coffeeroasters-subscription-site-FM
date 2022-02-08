@@ -9,14 +9,54 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
 
           .header__logo {
 
             img {
-
-                width:clamp(16.2rem, 15vw, 23.6rem); 
+                width:clamp(16.2rem, 33vw, 23.6rem); 
             }
 
-          }
+       
+        }
+    
+    
+              
+        
+    
+   }
+
+   .hide-for-mobile {
+       display: none;
+
+       a:not(:last-child){
+        margin-right: 3.3rem;
+      }
+
+       @include breakpoint(tablet) {
+           display: block;
+
+           .hide-for-desktop {
+            display: none;
+        }
+
+       }
+
+
+       @include breakpoint-down(mobile) {
+        display: none;
     }
+   }
+   .hide-for-desktop {
+
+     @include breakpoint(tablet){
+        display: none;
+     }
+   }
+
+   .header__menu {
+    display:none;
+} 
+
+
 }
