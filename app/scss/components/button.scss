@@ -10,7 +10,8 @@ button {
     cursor: pointer;
     border: 0;
     font-family: var(--font-h);
-    filter: drop-shadow(0 0.4rem 0.4rem  rgba(0, 0, 0, 0.5));
+    // overlay cant cover btn !
+    // filter: drop-shadow(0 0.4rem 0.4rem  rgba(0, 0, 0, 0.5));
     transition: all 0.5s;
     margin-bottom: 2.4rem;
     background-color: var(--dark-cyan);

@@ -13,27 +13,31 @@
     justify-content: space-between;
     align-items: center;
 
-
       .header__logo {
-
         img {
           width: clamp(16.2rem, 33vw, 23.6rem);
         }
 
       }
 
+  }
 
-}
+   &__hero {
+   margin-top:4rem;
+   max-width: 128rem;
    
+   
+   }
+
   .overlay {
     display: none;
     opacity: 0.9;
     position: fixed;
     top: 6rem;
-     bottom: 9rem;
-     left: 0;
-     right: 0;
- 
+    bottom: 9rem;
+    left: 0;
+    right: 0;
+
     height: 60vh;
     padding-top: 4rem;
     background-color: aliceblue;
@@ -45,37 +49,39 @@
       gap: 3.2rem;
       animation: rotateMenu 700ms ease-in;
       transform-origin: top center;
-  
-      
-        @keyframes rotateMenu {
-            0% {
-                transform: rotateX(-90deg)
-            }
-            70% {
-                transform: rotateX(20deg) 
-            }
-            100% {
-                transform: rotateX(0deg) 
-            }
-        }
-    
 
-        a {
-          text-transform: unset;
-          font-size: 2.4rem;
-          line-height: 3.2rem;
-          color: var(--txt-grey);
-          font-family: var(--font-h);
-          filter: drop-shadow(0 0.4rem 0.4rem  rgba(0, 0, 0, 0.5));
+
+      @keyframes rotateMenu {
+        0% {
+          transform: rotateX(-90deg)
         }
 
-  }
+        70% {
+          transform: rotateX(20deg)
+        }
 
- 
+        100% {
+          transform: rotateX(0deg)
+        }
+      }
+
+
+      a {
+        text-transform: unset;
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        color: var(--txt-grey);
+        font-family: var(--font-h);
+        filter: drop-shadow(0 0.4rem 0.4rem rgba(0, 0, 0, 0.5));
+      }
+
+    }
+
+
     background: rgb(254, 252, 247);
     background: linear-gradient(180deg, rgba(254, 252, 247, 1) 50.5%, rgba(0, 0, 0, 25%) 100%);
     box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
-    
+
 
   }
 
@@ -106,14 +112,14 @@
 
   .hide-for-desktop {
 
-      @include breakpoint(tablet) {
-        display: none;
-      }
-  }
-
-    .header__menu {
+    @include breakpoint(tablet) {
       display: none;
     }
+  }
+
+  .header__menu {
+    display: none;
+  }
 
 
 }
