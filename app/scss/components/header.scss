@@ -14,14 +14,25 @@
     align-items: center;
 
 
-    .header__logo {
+      .header__logo {
 
-      img {
-        width: clamp(16.2rem, 33vw, 23.6rem);
+        img {
+          width: clamp(16.2rem, 33vw, 23.6rem);
+        }
+
       }
 
+
     }
-  }
+
+      
+
+
+
+
+
+
+
 
   .overlay {
     display: none;
@@ -31,8 +42,6 @@
     right: 3.2rem;
     bottom: 9rem;
     left: 3.2rem;
-
-
     height: 60vh;
     padding-top: 4rem;
 
@@ -45,26 +54,26 @@
       transform-origin: top center;
   
       
-  @keyframes rotateMenu {
-      0% {
-          transform: rotateX(-90deg)
-      }
-      70% {
-          transform: rotateX(20deg) 
-      }
-      100% {
-          transform: rotateX(0deg) 
-      }
-  }
+        @keyframes rotateMenu {
+            0% {
+                transform: rotateX(-90deg)
+            }
+            70% {
+                transform: rotateX(20deg) 
+            }
+            100% {
+                transform: rotateX(0deg) 
+            }
+        }
     
 
-    a {
-      text-transform: unset;
-      font-size: 2.4rem;
-      line-height: 3.2rem;
-      color: var(--txt-grey);
-      font-family: var(--font-h);
-    }
+        a {
+          text-transform: unset;
+          font-size: 2.4rem;
+          line-height: 3.2rem;
+          color: var(--txt-grey);
+          font-family: var(--font-h);
+        }
 
   }
 
