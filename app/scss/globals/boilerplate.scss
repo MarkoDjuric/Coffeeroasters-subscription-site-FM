@@ -21,11 +21,11 @@ body {
 	overflow-x: hidden;
 	padding: 3.23rem 2.4rem 0 2.4rem;
 
-    @include breakpoint(tablet){
+    @include breakpoint-up(tablet){
 		padding: 4rem 3.9rem 0 3.9rem;
 	}
 
-	@include breakpoint(desktop){
+	@include breakpoint-up(desktop){
 		padding: 4.36rem 8rem 0 8rem;
 	}
 }

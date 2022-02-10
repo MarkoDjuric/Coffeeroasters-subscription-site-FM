@@ -23,9 +23,27 @@
   }
 
    &__hero {
-   margin-top:4rem;
    max-width: 128rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-flow: column;
+   text-align: center;
+   margin-top:4rem;
+   background-image:  url('../assets/home/mobile/image-hero-coffeepress.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   min-height: 50rem;
    
+
+    @include breakpoint-up(tablet) {
+      background-image:  url('../assets/home/tablet/image-hero-coffeepress.jpg');
+    }
+
+    @include breakpoint-up(desktop) {
+      background-image:  url('../assets/home/desktop/image-hero-coffeepress.jpg');
+    }
    
    }
 
@@ -94,7 +112,7 @@
       margin-right: 3.3rem;
     }
 
-    @include breakpoint(tablet) {
+    @include breakpoint-up(tablet) {
       display: block;
 
       .hide-for-desktop {
@@ -112,7 +130,7 @@
 
   .hide-for-desktop {
 
-    @include breakpoint(tablet) {
+    @include breakpoint-up(tablet) {
       display: none;
     }
   }
