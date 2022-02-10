@@ -1,26 +1,27 @@
-console.log('HELLO cofeeeeee');
+// gsap.to("#logo", {duration: 1, x: 100},{duration: 3, x:-100});
 
-const test = () => {
-	console.log('this is a test');
-};
+
 
 let iconClose = "assets/shared/mobile/icon-close.svg";
 let iconOpen = "assets/shared/mobile/icon-hamburger.svg";
 
 const hamburger = document.getElementById("closed");
+const minmenu = document.getElementById("minmenu");
 
 
 
 
-document.addEventListener('click', () => {
+document.getElementById('closed').addEventListener('click', () => {
 
 	if(hamburger.src.endsWith('icon-hamburger.svg') == true) {
 		
 		hamburger.src = iconClose;
+		minmenu.style.display = 'block';
 
 	}else {
 
 		hamburger.src= iconOpen;
+		minmenu.style.display = 'none';
 	}
-    console.log(hamburger.src)
+    
 });
