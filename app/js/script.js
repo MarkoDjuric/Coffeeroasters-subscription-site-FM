@@ -8,6 +8,8 @@ let iconOpen = "assets/shared/mobile/icon-hamburger.svg";
 const hamburger = document.getElementById("closed");
 const minmenu = document.getElementById("minmenu");
 
+let 
+
 
 
 

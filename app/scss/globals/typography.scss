@@ -69,8 +69,9 @@ h4 {
 
 // Hero section
 .p-hw {
-color:var(--hero-white);
+   color:var(--hero-white);
 }
+
 
 // Create Plan page
 .p-cpw {
@@ -103,4 +104,8 @@ a:active {
 	&:hover {
 		color:var(--txt-grey);
 	}
+}
+
+.shadow-text {
+	box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
 }
