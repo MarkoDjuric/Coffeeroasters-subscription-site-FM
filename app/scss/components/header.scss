@@ -17,18 +17,25 @@
         img {
           width: clamp(16.2rem, 33vw, 23.6rem);
         }
-
       }
-
   }
 
+
+
    &__hero {
-   max-width: 128rem;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-flow: column;
-   text-align: center;
+    max-width: 128rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    text-align: center;
+
+     @include breakpoint-up(mid) {
+       text-align: left;
+       align-items: flex-start;
+     }
+
+     
    margin-top:4rem;
    background-image:  url('../assets/home/mobile/image-hero-coffeepress.jpg');
    background-repeat: no-repeat;
@@ -48,9 +55,40 @@
 
    }
 
-   &__hero-p {
-    padding: 2.4rem;
-    padding-bottom: 3.9rem;
+  //  &__hero-p {
+  //   padding: 2.4rem;
+  //   padding-bottom: 3.9rem;
+  // }
+
+  &__hero {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    border-radius: 1rem;
+
+    @include breakpoint-up(tablet) {
+      margin-top: 5.3rem;
+
+    }
+
+    @include breakpoint-up(desktop) {
+      margin-top: 4.3rem;
+
+    }
+   
+    .h-w {
+      margin-bottom:2rem;
+      max-width: 49.3rem;
+    }
+    
+     .p-hw {
+       margin-bottom:3.9rem;
+       max-width: 39.8rem;
+     }
+
+      // .hero_btn {
+      //   margin-top: 3.9rem;
+      //   margin-left: 3.7rem;
+      // }
   }
  
 
