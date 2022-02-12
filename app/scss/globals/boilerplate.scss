@@ -1,5 +1,6 @@
 @use '../util' as *;
 
+
 html {
 	font-size: 62.5%;
 	box-sizing: border-box;
@@ -30,8 +31,10 @@ body {
 	}
 }
 
-img {
+img,
+picture {
 	max-width: 100%;
 }
+	
 	
 
