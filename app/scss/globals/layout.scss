@@ -14,7 +14,11 @@
 
 // margin-top of sections
 .m-tp {
-	margin-top: 1.2rem;
+	margin-top: 12rem;
+
+	 @include breakpoint-up(tablet) {
+		 margin-top: 14.4rem;
+	 }
 }
 
 
