@@ -8,21 +8,19 @@
 
 
   &__navigation {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-      .header__logo {
-        img {
-          width: clamp(16.2rem, 33vw, 23.6rem);
-        }
+    .header__logo {
+      img {
+        width: clamp(16.2rem, 33vw, 23.6rem);
       }
+    }
   }
 
 
-
-   &__hero {
+  &__hero {
     max-width: 128rem;
     display: flex;
     justify-content: center;
@@ -30,35 +28,28 @@
     flex-flow: column;
     text-align: center;
 
-     @include breakpoint-up(mid) {
-       text-align: left;
-       align-items: flex-start;
-     }
+    @include breakpoint-up(mid) {
+      text-align: left;
+      align-items: flex-start;
+    }
 
-     
-   margin-top:4rem;
-   background-image:  url('../assets/home/mobile/image-hero-coffeepress.jpg');
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-   min-height: 50rem;
-   
+    margin-top:4rem;
+    background-image: url('../assets/home/mobile/image-hero-coffeepress.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 50rem;
+
 
     @include breakpoint-up(tablet) {
-      background-image:  url('../assets/home/tablet/image-hero-coffeepress.jpg');
+      background-image: url('../assets/home/tablet/image-hero-coffeepress.jpg');
     }
 
     @include breakpoint-up(desktop) {
-      background-image:  url('../assets/home/desktop/image-hero-coffeepress.jpg');
+      background-image: url('../assets/home/desktop/image-hero-coffeepress.jpg');
     }
+  }
 
-
-   }
-
-  //  &__hero-p {
-  //   padding: 2.4rem;
-  //   padding-bottom: 3.9rem;
-  // }
 
   &__hero {
     padding-left: 2.4rem;
@@ -67,30 +58,27 @@
 
     @include breakpoint-up(tablet) {
       margin-top: 5.3rem;
-
+      padding-left: 5.8rem;
     }
+
 
     @include breakpoint-up(desktop) {
       margin-top: 4.3rem;
+      padding-left: 8.5rem;
 
     }
-   
+
     .h-w {
-      margin-bottom:2rem;
+      margin-bottom: 2rem;
       max-width: 49.3rem;
     }
-    
-     .p-hw {
-       margin-bottom:3.9rem;
-       max-width: 39.8rem;
-     }
 
-      // .hero_btn {
-      //   margin-top: 3.9rem;
-      //   margin-left: 3.7rem;
-      // }
+    .p-hw {
+      margin-bottom: 3.9rem;
+      max-width: 39.8rem;
+    }
+
   }
- 
 
   .overlay {
     display: none;
@@ -100,7 +88,6 @@
     bottom: 9rem;
     left: 0;
     right: 0;
-
     height: 60vh;
     padding-top: 4rem;
     background-color: aliceblue;
@@ -113,6 +100,7 @@
       animation: rotateMenu 700ms ease-in;
       transform-origin: top center;
 
+      /* Nav Animations */
 
       @keyframes rotateMenu {
         0% {
@@ -128,7 +116,6 @@
         }
       }
 
-
       a {
         text-transform: unset;
         font-size: 2.4rem;
@@ -140,13 +127,13 @@
 
     }
 
-
     background: rgb(254, 252, 247);
     background: linear-gradient(180deg, rgba(254, 252, 247, 1) 50.5%, rgba(0, 0, 0, 25%) 100%);
     box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
 
-
   }
+
+
 
 
 
@@ -166,15 +153,13 @@
 
     }
 
-
     @include breakpoint-down(mobile) {
       display: none;
     }
-
   }
 
-  .hide-for-desktop {
 
+  .hide-for-desktop {
     @include breakpoint-up(tablet) {
       display: none;
     }
@@ -184,5 +169,5 @@
     display: none;
   }
 
-
 }
+
