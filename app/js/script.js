@@ -1,4 +1,13 @@
 
+// Removeing video background
+
+    let video = document.getElementsByTagName('video')[0];
+
+    video.onended = function(e) {
+      video.style.display="none";
+    };
+
+
 
 
 

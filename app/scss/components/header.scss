@@ -75,7 +75,13 @@
 
     .h-w {
       margin-bottom: 2rem;
-      max-width: 49.3rem;
+      @include breakpoint-up(tablet) {
+        max-width: 32.9rem;
+      }
+      @include breakpoint-up(desktop) {
+        max-width: 49.3rem;
+      }
+      
     }
 
     .p-hw {
