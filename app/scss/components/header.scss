@@ -4,10 +4,12 @@
   max-width: 128rem;
   position: relative;
   z-index: 1;
-
+  overflow: hidden;
 
 
   &__navigation {
+    z-index: 1;
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,7 +23,8 @@
 
 
   &__hero {
-   
+    overflow: hidden;
+    z-index: 999;
     max-width: 128rem;
     display: flex;
     justify-content: center;

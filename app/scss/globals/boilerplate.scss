@@ -20,6 +20,7 @@ body {
 	padding: 0;
 	font-family: var(--font-p);
 	overflow-x: hidden;
+	
 	padding: 3.23rem 2.4rem 0 2.4rem;
 	
 
@@ -71,14 +72,16 @@ span {
 
 video {
 	position: absolute;
-	top:0;
+	top:7rem;
 	left: 0;
 
 	
-	opacity: 0.5;
-	bottom: 0;
-	border-radius: 2rem;	
-	object-fit: cover;
+	opacity: 0.6;
+
+	border-radius: 1rem;	
+	object-fit:cover;
+	// height:60rem;
+	
 
 	
 
