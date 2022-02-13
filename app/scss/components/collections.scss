@@ -19,16 +19,18 @@
 
         @include breakpoint-up(tablet) {
             article {
-
                 padding-inline:5.8rem;
+                margin-bottom: 3.2rem;
+                
             }
         }
+
         @include breakpoint-up(desktop) {
             article {
-
                 padding-inline:0;
             }
         }
+
 
         @include breakpoint-up(desktop) {
             grid-template-columns: repeat(4,1fr);
@@ -49,6 +51,12 @@
                 right: 0;
                 left: 0;
                 background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(254, 252, 247, 0.0001)), to(#fefcf7));
+                background-image: linear-gradient(rgba(254, 252, 247, 0.0001) 0%, #fefcf7 100%);
+
+                @include breakpoint-up(tablet){
+                    top: -6rem;
+                    bottom: -2rem;
+                }
             }
             @include breakpoint-up(tablet){
                 font-size: 9.2rem;
@@ -92,6 +100,10 @@
             align-items: center;
             text-align: center;
         } 
+
+        .txt_article {
+            max-width: 28.2rem;
+        }
     }
     
     .coffy {
