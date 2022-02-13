@@ -3,19 +3,39 @@
 
 .collection {
     
+    max-width: 111.1rem;
     
     &__wrap {
-        max-width: 111.1rem;
         text-align: center;
         gap: 4.8rem;
         padding-inline: 2.3rem;
+        grid-template-columns: 1fr;
+        align-items: center;
 
-        @include breakpoint-up(tablet) {
-            grid-template-columns: repeat(4, 1fr);
-          
+        @include breakpoint-up(mid) {
+            gap:0;
+            padding-inline:0;
         }
 
+        @include breakpoint-up(tablet) {
+            article {
 
+                padding-inline:5.8rem;
+            }
+        }
+        @include breakpoint-up(desktop) {
+            article {
+
+                padding-inline:0;
+            }
+        }
+
+        @include breakpoint-up(desktop) {
+            grid-template-columns: repeat(4,1fr);
+            gap: 3rem;
+            padding-inline:0;
+        }
+          
         .wrap-coffy__heading {
            padding-bottom: 1.3rem;
            position: relative;
@@ -30,6 +50,20 @@
                 left: 0;
                 background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(254, 252, 247, 0.0001)), to(#fefcf7));
             }
+            @include breakpoint-up(tablet){
+                font-size: 9.2rem;
+                margin-bottom: -3rem;
+                z-index: -2;
+            }
+            @include breakpoint-up(desktop){
+                grid-column: 1 / 5;
+                // max-width: 111rem;
+                font-size: 14.9rem;
+                margin-bottom: -5rem;
+                z-index: -2;
+                padding-inline: 0;
+        
+            }
         }
 
         .h-g {
@@ -39,33 +73,31 @@
     }
 
     
-  &__wrap-coffy {
-      grid-template-columns: 1fr;
-      justify-items: center;
-      align-items: center;
-
-      @include breakpoint-up(mid) {
-          grid-template-columns: 1fr 1fr;
-          align-items: flex-start;
-          text-align: left;
-      }
-
-      @include breakpoint-up(tablet) {
+    &__wrap-coffy {
         grid-template-columns: 1fr;
-        align-items: flex-start;
-        text-align: left;
+        justify-items: center;
+        align-items: center;
+
+        @include breakpoint-up(mid) {
+            grid-template-columns: 1fr 1fr;
+            align-items: flex-start;
+            text-align: left;
+        }
+        @include breakpoint-up(desktop) {
+            grid-template-columns: 1fr;
+            align-items: center;
+            text-align: center;
+        } 
     }
     
-  
-    
-}
-
-.coffy {
-  width:clamp(20rem, 35vw, 25.5rem);
- 
-}
+    .coffy {
+        width:clamp(20rem, 35vw, 25.5rem);
+    }
+        
 
 }
+
+
       
       
 
