@@ -1,0 +1,23 @@
+.smoke {
+    transform: translateY(-100%);
+}
+
+.smoke-span {
+    opacity: 0;
+    display: inline-block;
+    animation: amin 1s linear infinite;
+
+    @keyframes  amin {
+        0% {
+            opacity: 0;
+            transform: rotateY(-90deg);
+            filter: blur(1rem);
+        }
+        100%{
+            opacity: 1;
+            transform: rotateY(0deg);
+            filter: blur(0);
+        }
+    }
+}
+
