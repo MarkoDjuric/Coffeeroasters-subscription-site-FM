@@ -2,14 +2,16 @@
 
 .header {
   max-width: 128rem;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
+  
+   position: relative;
+  // z-index: 1;
+  // overflow: hidden;
 
 
   &__navigation {
-    z-index: 1;
-    overflow: hidden;
+    //  overflow: hidden; z-index: 1;
+  
+  
     display: flex;
     justify-content: space-between;
     align-items: center;
