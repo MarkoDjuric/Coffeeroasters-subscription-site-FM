@@ -2,16 +2,13 @@
 
 .header {
   max-width: 128rem;
-  
-   position: relative;
+  position: relative;
   // z-index: 1;
   // overflow: hidden;
-
-
+  
   &__navigation {
-    //  overflow: hidden; z-index: 1;
-  
-  
+    overflow: hidden; 
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,14 +22,14 @@
 
 
   &__hero {
-    overflow: hidden;
-    z-index: 999;
     max-width: 128rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
     text-align: center;
+    overflow: hidden;
+    z-index: 999;
 
     @include breakpoint-up(mid) {
       text-align: left;

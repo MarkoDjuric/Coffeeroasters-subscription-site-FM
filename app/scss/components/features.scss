@@ -1,6 +1,18 @@
+@use '../util'as *;
 
 .features {
     max-width: 128rem;
-    border: 1px solid red;
     background-color: var(--dark-grey-blue);
-}
+    border-radius: 1rem;
+
+    &__wrapp_items {
+        gap: 2.4rem;
+    }
+
+     &__item {
+         background-color: var(--dark-cyan);
+         border-radius: 1rem;
+     }
+
+
+    }
