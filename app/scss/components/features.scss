@@ -2,12 +2,14 @@
 
 .features {
     max-width: 128rem;
-    background-color: var(--dark-grey-blue);
-    border-radius: 1rem;
-
-        &__wrapp {
-            padding-inline:2.4rem;
+    
+    
+    &__wrapp {
+            border-radius: 1rem;
+            background-color: var(--dark-grey-blue);
+            padding-inline: 2.4rem;
             padding-top: 6.4rem;
+            height: 90.2rem;
 
             .features__text {
                 margin-bottom: 6.4rem;
@@ -21,11 +23,24 @@
 
         &__wrapp_items {
             gap: 2.4rem;
+            min-height: 119.4rem;
+            grid-template-columns: 1fr;
+            // grid-template-rows: 3.82rem;
         }
 
         &__item {
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
             background-color: var(--dark-cyan);
             border-radius: 1rem;
+            text-align: center;
+            padding-inline: 2.1rem;
+            // min-height: 3.82rem;
+            .h-w {
+                margin-top: 5.6rem;
+                margin-bottom: 2.4rem;
+            }
         }
 
 
