@@ -56,7 +56,7 @@
 
 
   &__hero {
-  
+    position: relative;
     padding-left: 2.4rem;
     padding-right: 2.4rem;
     border-radius: 1rem;
@@ -176,6 +176,7 @@
   .header__menu {
     display: none;
   }
+
 
 }
 
