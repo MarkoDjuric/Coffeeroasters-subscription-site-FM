@@ -40,8 +40,11 @@ h2 {
 h3 {
 	font-size: 2.8rem;
 
-	@include breakpoint-up(desktop){
+	@include breakpoint-up(tablet){
 		font-size: 3.2rem;
+	}
+	@include breakpoint-up(desktop){
+		font-size: 4rem;
 	}
 }
 
@@ -50,8 +53,8 @@ h3 {
 h4 {
 	font-size:2.4rem;
 	line-height: 3.2rem;
-	
 }
+	
 
 .h-w {
 	color: var(--hero-white);
