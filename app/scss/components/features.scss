@@ -5,14 +5,28 @@
     background-color: var(--dark-grey-blue);
     border-radius: 1rem;
 
-    &__wrapp_items {
-        gap: 2.4rem;
-    }
+        &__wrapp {
+            padding-inline:2.4rem;
+            padding-top: 6.4rem;
 
-     &__item {
-         background-color: var(--dark-cyan);
-         border-radius: 1rem;
-     }
+            .features__text {
+                margin-bottom: 6.4rem;
+                text-align: center;
+
+                h3 {
+                    margin-bottom: 2.4rem;
+                }
+            }
+        }
+
+        &__wrapp_items {
+            gap: 2.4rem;
+        }
+
+        &__item {
+            background-color: var(--dark-cyan);
+            border-radius: 1rem;
+        }
 
 
     }
