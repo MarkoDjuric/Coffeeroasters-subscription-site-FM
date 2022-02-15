@@ -66,7 +66,6 @@ h4 {
 }
 
 
-
 //Paragraphs colours
 
 .p-g {
@@ -121,4 +120,15 @@ a:active {
 .shadow-text {
 	
 	filter: drop-shadow(0 0.4rem 0.4rem  rgba(0, 0, 0, 0.5));
+}
+
+// span numbers
+
+.pale_num {
+	font-size: 7.2rem;
+	line-height: 7.2rem;
+	font-weight: 900;
+	font-family: var(--font-h);
+	color: var(--pale-orange);
+	padding-bottom: 2.4rem;
 }
