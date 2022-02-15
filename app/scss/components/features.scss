@@ -12,6 +12,10 @@
             padding-top: 6.4rem;
             height: 90.2rem;
 
+            @include breakpoint-up(mid) {
+                height: 60.2rem;
+            }
+
             
             @include breakpoint-up(tablet) {
                 padding-top: 5.6rem;

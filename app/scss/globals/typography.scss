@@ -125,10 +125,11 @@ a:active {
 // span numbers
 
 .pale_num {
+	display: block;
 	font-size: 7.2rem;
 	line-height: 7.2rem;
 	font-weight: 900;
 	font-family: var(--font-h);
 	color: var(--pale-orange);
-	padding-bottom: 2.4rem;
+	margin-bottom: 2.4rem;
 }
