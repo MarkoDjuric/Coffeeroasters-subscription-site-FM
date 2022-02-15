@@ -77,6 +77,11 @@
         &__item {            
             flex-direction: column;
             justify-content: center;
+
+
+
+
+
             align-items: center;
             min-height:38.2rem;
             max-width: 32rem;
@@ -85,6 +90,9 @@
             border-radius: 1rem;
             text-align: center;
             padding-inline: 2.1rem;
+
+
+
 
 
             @include breakpoint-up(mid) {
@@ -111,7 +119,11 @@
                     margin-bottom: 1.6rem;
                     margin-top: 4.1rem;
                 }
-
+                @include breakpoint-up(tabletxd){
+                    justify-content: space-evenly;
+                    padding-left: 0;
+                    column-gap: 0;
+                }
                 p {
                     grid-column: 2 / 3;
                     grid-row: 2 / 3;
@@ -124,12 +136,14 @@
                         width: unset;
                     }
                 }
-
+  
+  
                 @include breakpoint-up(midesktop) {
                     display: flex;
                     text-align: center;
                     padding-top: 7rem;
                     padding-left: 4.8rem;
+                    
 
                     img,
                     p {
@@ -152,6 +166,7 @@
                     margin-bottom: 2.4rem;
                 }
             }
+
         }
 
 }

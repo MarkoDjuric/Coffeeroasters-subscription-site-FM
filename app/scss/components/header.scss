@@ -51,6 +51,29 @@
     @include breakpoint-up(desktop) {
       background-image: url('../assets/home/desktop/image-hero-coffeepress.jpg');
     }
+
+    .hero_wrap {
+      
+      max-width: 50rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      @include breakpoint-up(mid){
+        display: block;
+      }
+      
+      
+      @include breakpoint-up(tablet){
+        
+        p {
+            max-width: 39.8rem;
+        }
+     }
+
+    }
+    
   }
 
 
