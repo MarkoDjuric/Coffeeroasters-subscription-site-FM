@@ -58,11 +58,13 @@
                     bottom: -2rem;
                 }
             }
+
             @include breakpoint-up(tablet){
                 font-size: 9.2rem;
                 margin-bottom: -3rem;
                 z-index: -2;
             }
+            
             @include breakpoint-up(desktop){
                 grid-column: 1 / 5;
                 // max-width: 111rem;
