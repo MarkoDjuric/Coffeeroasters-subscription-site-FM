@@ -12,10 +12,16 @@
             height: 90.2rem;
           
             @include breakpoint-up(tablet) {
+                padding-top: 5.6rem;
                 height: 57.3rem;
                 padding-inline: 5.7rem;
-                
             }
+            @include breakpoint-up(midesktop) {
+                padding-top: 7.5rem;
+                // height: 57.3rem;
+                // padding-inline: 5.7rem;
+            }
+                
 
             .features__text {
                 margin-bottom: 6.4rem;
@@ -27,28 +33,35 @@
                     margin-bottom: 7rem;
                 }
 
+                @include breakpoint-up(midesktop) {
+                    margin-bottom: 8.6rem;
+                }
+
                 h3 {
                     margin-bottom: 2.4rem;
-                    
                 }
             }
         }
+                    
 
         &__wrapp_items {
             gap: 2.4rem;
             min-height: 119.4rem;
             grid-template-columns: 1fr;
+            max-width: 120rem;
 
             @include breakpoint-up(tablet) {
                 min-height: 58.8rem;
-                max-width: 57.3rem;
             }
-
-
+            @include breakpoint-up(midesktop) {
+                min-height: 0;
+            justify-content: center;
+                grid-template-columns:   repeat(3, minmax(250px, 1fr));
+            }
+    
         }
-                
-            
-        &__item {
+                            
+        &__item {           
             flex-direction: column;
             justify-content:center;
             align-items: center;
@@ -59,28 +72,51 @@
             
             @include breakpoint-up(tablet) {
                 display: grid;
-                grid-template-columns: 1fr 3fr;
+                grid-template-columns: auto auto;
                 text-align: left;
-
+                column-gap: 5.5rem;
+                padding-right: 4.8rem;
+                padding-left: 7rem;
+                
+               
                 img {
                     grid-column:1 / 2;
                     grid-row: 1 / 3;
                     place-self: center;
+                    justify-self:flex-start;
                 }
                     
                 
                 h4 {
-                    grid-column: 2 / 5;
+                    grid-column: 2 / 3;
                     grid-row: 1 / 2;
                     margin-bottom: 1.6rem;
                     margin-top: 4.1rem;
+                    
                 }
 
                 p {
-                grid-column:  2 / 5;
-                grid-row: 2 / 3;
-                padding-bottom: 4.1rem;
-                max-width: 34.4rem;
+                    grid-column:  2 / 3;
+                    grid-row: 2 / 3;
+                    padding-bottom: 4.1rem;
+                    width: 34.4rem;
+                    @include breakpoint-up(midesktop) {
+                      width: unset;
+                    }
+                }
+                    
+
+                @include breakpoint-up(midesktop) {
+                    display:flex;
+                    text-align: center;
+                    padding-top: 7rem;
+
+                    img,p {
+
+                        max-width: 25.5rem;
+                    }
+
+                    
                 }
 
               
