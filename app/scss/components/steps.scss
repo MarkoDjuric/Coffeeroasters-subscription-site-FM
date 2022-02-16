@@ -74,9 +74,9 @@
                 margin-bottom: 2.4rem;
               
                 @include breakpoint-up(mid) {
-                font-size: 2.8rem;
-                line-height: 3.2rem;
-                max-width: 22.5rem;
+                    font-size: 2.8rem;
+                    line-height: 3.2rem;
+                    max-width: 22.5rem;
             }
 
                 @include breakpoint-up(midesktop) {
@@ -90,8 +90,8 @@
                 margin-inline: auto;
                 
                 @include breakpoint-up(mid) {
-                 width: 90%;
-                 margin-inline: 0;
+                    width: 90%;
+                    margin-inline: 0;
                 }
                 
                 @include breakpoint-up(tablet) {
