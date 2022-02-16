@@ -38,12 +38,13 @@ picture {
 	max-width: 100%;
 }
 
-span {
+.span_smoke {
 	opacity: 1;
     animation: amin 1s;
     // display: inline-block;
 
     @keyframes  amin{
+
         0%{
             opacity: 0;
             transform: rotateY(-90deg);
@@ -55,20 +56,24 @@ span {
             filter: blur(0);
         }
     }
+
 	&:nth-child(1) {
 		animation-delay:1s;
 	}
+
 	&:nth-child(2) {
 		animation-delay:1.5s;
 	}
+
 	&:nth-child(3) {
 		animation-delay:2s;
 	}
+
 	&:nth-child(4) {
 		animation-delay:2.5s;
 	}
-	
 }
+	
 
 video {
 	position: absolute;

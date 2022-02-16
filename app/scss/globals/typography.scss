@@ -118,9 +118,9 @@ a:active {
 }
 
 .shadow-text {
-	
 	filter: drop-shadow(0 0.4rem 0.4rem  rgba(0, 0, 0, 0.5));
 }
+	
 
 // span numbers
 
@@ -132,4 +132,36 @@ a:active {
 	font-family: var(--font-h);
 	color: var(--pale-orange);
 	margin-bottom: 2.4rem;
+	position: relative;
 }
+
+
+.pale_num:before {
+	@include breakpoint-up(tablet) {
+
+		    position: absolute;
+			width: 2.9rem;
+			height: 2.9rem;
+			content: "";
+			border: 0.3rem solid #0e8784;
+			top: -7rem;
+			border-radius: 50%;
+			left: 0;
+			max-width: 79rem;
+			// background-color:var(--dark-cyan);
+		}
+	
+	}
+			
+.noline:after {
+	@include breakpoint-up(tablet) {
+	position: absolute;
+	width: 92%;
+	height: 0.2rem;
+	content: "";
+	background-color:var(--pale-orange);
+	top: -5.5rem;
+	left: 3rem;
+	}
+}
+

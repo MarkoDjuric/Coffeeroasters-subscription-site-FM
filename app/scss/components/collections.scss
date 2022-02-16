@@ -113,7 +113,10 @@
                  
             &:hover {
                 cursor: pointer;
-                 transform: translateY(-3rem);
+                transform: translateY(-3rem);
+                transition: width 2s;
+                transition-delay: 2s;
+                transition-timing-function: ease;
                 
             }
     }
