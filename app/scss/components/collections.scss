@@ -110,6 +110,12 @@
     
     .coffy {
         width:clamp(20rem, 35vw, 25.5rem);
+                 
+            &:hover {
+                cursor: pointer;
+                 transform: translateY(-3rem);
+                
+            }
     }
         
 
