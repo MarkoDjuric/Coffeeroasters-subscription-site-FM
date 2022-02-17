@@ -1,10 +1,83 @@
+@use '../util'as *;
+
 
 .footer {
     background-color: var(--dark-grey-blue);
     max-width: 128rem;
 
-            &__nav {
 
+    &__nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4.98rem;
+        padding: 5.4rem;
+
+        @include breakpoint-up(tablet) {
+            gap: 6.5rem;
+            padding-left: 21.5rem;
+            padding-right: 19rem
+        }
+
+        @include breakpoint-up(desktop) {
+            flex-direction: row;
+            justify-content: space-between;
+            padding-inline: 8.5rem;
+
+            .nav__links {
+
+                display: flex;
+                gap: 10.2rem;
+                align-items: center;
+                justify-content: center;
+
+                .ulist {
+                    padding-top: 0;
+                }
             }
+        }
+    }
+
+    .ulist {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.4rem;
+        padding-top: 4.86rem;
+
+        @include breakpoint-up(tablet) {
+            flex-flow: row;
+            gap: 3.3rem;
+            padding-top: 3.2rem;
+        }
+
+        @include breakpoint-up(desktop) {}
+
+        li {
+            color: var(--links);
+            text-transform: uppercase;
+            font-size: 1.15rem;
+            line-height: 1.5rem;
+            letter-spacing: 0.092rem;
+
+            &:hover {
+                color: var(--hero-white);
+                scale: 1.2;
+            }
+        }
+    }
+
+    .icons {
+        a:not(:last-child) {
+            margin-right: 2.4rem;
+        }
+
+        svg:hover path {
+            fill: var(--dark-cyan);
+        }
+    }
 
 }
+
+
+
