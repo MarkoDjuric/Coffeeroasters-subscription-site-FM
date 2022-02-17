@@ -9,6 +9,9 @@
     @include breakpoint-up(mid) {
         margin-top: 45.4rem;
     }
+    @include breakpoint-up(tablet) {
+        margin-top: 42rem;
+    }
 
     @include breakpoint-up(desktop) {
         margin-top: 35.5rem;
@@ -28,6 +31,7 @@
 
         @include breakpoint-up(mid) {
             grid-template-columns: repeat(3, 1fr);
+           
             row-gap: 4.4rem;
             place-items: unset;
         }
@@ -81,6 +85,10 @@
                     font-size: 3.2rem;
                     line-height: 3.6rem;
                 }
+                
+                @include breakpoint-up(tablet) {
+                    margin-bottom: 3.8rem;
+                }
 
             }
 
@@ -88,13 +96,15 @@
                 margin-inline: auto;
 
                 @include breakpoint-up(mid) {
-                    width: 90%;
+                    width: 96%;
+                    height:13rem;
+                    
                     margin-inline: 0;
                 }
 
                 @include breakpoint-up(tablet) {
-                    max-width: 22.3rem;
-                    height: 15rem;
+                     max-width: 23.3rem;
+                    
                 }
 
                 @include breakpoint-up(desktop) {

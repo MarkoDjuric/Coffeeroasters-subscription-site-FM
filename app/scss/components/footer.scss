@@ -4,6 +4,12 @@
 .footer {
     background-color: var(--dark-grey-blue);
     max-width: 128rem;
+    @include breakpoint-up(tablet) {
+        margin-top: 14rem;
+    }
+    @include breakpoint-up(desktop) {
+        margin-top: 20rem;
+    }
 
 
     &__nav {
@@ -23,6 +29,8 @@
             flex-direction: row;
             justify-content: space-between;
             padding-inline: 8.5rem;
+            padding-top: 4.7rem;
+            padding-bottom: 4.7rem;
 
             .nav__links {
 
