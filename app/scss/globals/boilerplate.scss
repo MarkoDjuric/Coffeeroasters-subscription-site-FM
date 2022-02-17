@@ -17,11 +17,10 @@ html {
 
 body {
 	margin: 0;
-	
 	font-family: var(--font-p);
 	overflow-x: hidden;
 	padding: 3.23rem 2.4rem 0 2.4rem;
-	
+		
     @include breakpoint-up(tablet){
 		padding: 4rem 3.9rem 0 3.9rem;
 	}
@@ -77,7 +76,6 @@ picture {
 	}
 }
 	
-
 video {
 	position: absolute;
 	top:0;

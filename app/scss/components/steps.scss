@@ -9,6 +9,7 @@
     @include breakpoint-up(mid) {
         margin-top: 45.4rem;
     }
+
     @include breakpoint-up(desktop) {
         margin-top: 35.5rem;
     }
@@ -21,63 +22,60 @@
         row-gap: 5.6rem;
         place-items: center;
 
-        @include breakpoint-up(desktop){
+        @include breakpoint-up(desktop) {
             transform: translate(-2.8rem);
         }
 
-        @include breakpoint-up(mid){
+        @include breakpoint-up(mid) {
             grid-template-columns: repeat(3, 1fr);
             row-gap: 4.4rem;
-            place-items:unset;
+            place-items: unset;
         }
 
-        @include breakpoint-up(desktop){
+        @include breakpoint-up(desktop) {
             row-gap: 6.4rem;
         }
 
         .steps_item {
-            
+
             @include breakpoint-up(mid) {
                 flex-direction: column;
                 text-align: left;
 
-            &:not(:first-child) {
-                margin-top: 11.2rem;
+                &:not(:first-child) {
+                    margin-top: 11.2rem;
+                }
             }
-        }
 
-        // @include breakpoint-up(tablet) {
-        //     height:37.1rem;
-        // }
-        // @media screen and(min-width:923px) {
-        //     height: unset;
-        // }
-        
-  
+            // @include breakpoint-up(tablet) {
+            //     height:37.1rem;
+            // }
+            // @media screen and(min-width:923px) {
+            //     height: unset;
+            // }
 
-  
             .hero_btn {
                 margin-top: 9.4rem;
                 margin-right: auto;
             }
-               
+
             .wrapp_heading {
                 margin-bottom: 8rem;
 
-                @include breakpoint-up(desktop){
-                    transform: translate(0,-8.6rem);
+                @include breakpoint-up(desktop) {
+                    transform: translate(0, -8.6rem);
                 }
 
             }
 
             h3 {
                 margin-bottom: 2.4rem;
-              
+
                 @include breakpoint-up(mid) {
                     font-size: 2.8rem;
                     line-height: 3.2rem;
                     max-width: 22.5rem;
-            }
+                }
 
                 @include breakpoint-up(midesktop) {
                     font-size: 3.2rem;
@@ -85,19 +83,20 @@
                 }
 
             }
-                
+
             .p-sm {
                 margin-inline: auto;
-                
+
                 @include breakpoint-up(mid) {
                     width: 90%;
                     margin-inline: 0;
                 }
-                
+
                 @include breakpoint-up(tablet) {
                     max-width: 22.3rem;
                     height: 15rem;
                 }
+
                 @include breakpoint-up(desktop) {
                     max-width: 28.5rem;
                     height: 13rem;
