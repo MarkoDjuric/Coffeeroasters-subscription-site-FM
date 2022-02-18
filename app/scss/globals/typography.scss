@@ -141,7 +141,7 @@ svg {
 
 
 .pale_num:before {
-	@include breakpoint-up(tablet) {
+	@include breakpoint-up(mid) {
 
 		    position: absolute;
 			width: 2.9rem;
@@ -158,14 +158,30 @@ svg {
 	}
 			
 .noline:after {
-	@include breakpoint-up(tablet) {
-	position: absolute;
-	width: 92%;
+	@include breakpoint-up(mid) {
+		position: absolute;
+		//  width:92%;
+		// @include breakpoint-down(tabletsm){
+		// 	width:87%;
+		//  }
+		 
+			 width:88%;
+			 
+		 
+
 	height: 0.2rem;
 	content: "";
 	background-color:var(--pale-orange);
 	top: -5.5rem;
 	left: 3rem;
+	
+	
+	@media screen and (min-width:919px) {
+		width: 90%;
+	}
+	@media screen and (min-width:1027px) {
+		width: 92%;
 	}
 }
 
+}
