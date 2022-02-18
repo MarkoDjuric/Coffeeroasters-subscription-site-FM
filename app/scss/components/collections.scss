@@ -113,7 +113,8 @@
             &:hover {
                 cursor: pointer;
                 transform: translateY(-25%);
-                transition-timing-function:  ease;
+                transition-timing-function:  ease-in-out;
+
             }
         }
     }
