@@ -78,6 +78,7 @@
     .icons {
         a:not(:last-child) {
             margin-right: 2.4rem;
+            // transition: transform 0.3s ease 0s, box-shadow 0.3s ease 0s;
         }
 
         svg:hover path {
