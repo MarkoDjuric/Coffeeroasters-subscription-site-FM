@@ -137,12 +137,14 @@ svg {
 	color: var(--pale-orange);
 	margin-bottom: 2.4rem;
 	position: relative;
+	cursor: pointer;
+	
+
+
 }
-
-
 .pale_num:before {
 	@include breakpoint-up(mid) {
-
+		    cursor: pointer;
 		    position: absolute;
 			width: 2.9rem;
 			height: 2.9rem;
@@ -154,21 +156,17 @@ svg {
 			max-width: 79rem;
 			// background-color:var(--dark-cyan);
 		}
-	
+
+	}
+	.pale_num:hover::before {
+		background-color: #0e8784;
+		scale: 1.15;
 	}
 			
 .noline:after {
 	@include breakpoint-up(mid) {
-		position: absolute;
-		//  width:92%;
-		// @include breakpoint-down(tabletsm){
-		// 	width:87%;
-		//  }
-		 
-			 width:88%;
-			 
-		 
-
+	position: absolute;
+    width:88%;
 	height: 0.2rem;
 	content: "";
 	background-color:var(--pale-orange);
@@ -176,12 +174,15 @@ svg {
 	left: 3rem;
 	
 	
-	@media screen and (min-width:919px) {
-		width: 90%;
-	}
-	@media screen and (min-width:1027px) {
-		width: 92%;
-	}
+	
+		@media screen and (min-width:919px) {
+			width: 90%;
+		}
+		@media screen and (min-width:1027px) {
+			width: 92%;
+		}
+
+
 }
 
 }

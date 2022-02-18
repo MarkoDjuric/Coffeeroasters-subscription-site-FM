@@ -67,15 +67,14 @@
             
             @include breakpoint-up(desktop){
                 grid-column: 1 / 5;
-                // max-width: 111rem;
                 font-size: 14.9rem;
                 margin-bottom: -5rem;
-                z-index: -2;
                 padding-inline: 0;
-        
+                // z-index: -2;
             }
         }
-
+                
+        
         .h-g {
             padding-top: 2.4rem;
             padding-bottom: 1.6rem;
@@ -113,16 +112,17 @@
                  
             &:hover {
                 cursor: pointer;
-                transform: translateY(-3rem);
-                transition: width 2s;
-                transition-delay: 2s;
-                transition-timing-function: ease;
-                
+                transform: translateY(-25%);
+                transition-timing-function:  ease;
             }
+        }
     }
+            
+                
+                 
+                
         
 
-}
 
 
       
