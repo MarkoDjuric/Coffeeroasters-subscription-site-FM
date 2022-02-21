@@ -1,4 +1,4 @@
-@use '../util'as *;
+@use '../../util'as *;
 
 .header {
   max-width: 128rem;
@@ -101,12 +101,12 @@
 
     .h-w {
       margin-bottom: 2rem;
-      // @include breakpoint-up(tablet) {
-      //   max-width: 32.9rem;
-      // }
-      // @include breakpoint-up(desktop) {
-      //   max-width: 49.3rem;
-      // }
+      @include breakpoint-up(tablet) {
+        max-width: 32.9rem;
+      }
+      @include breakpoint-up(desktop) {
+        max-width: 49.3rem;
+      }
       
     }
 
@@ -192,17 +192,17 @@
     }
   }
 
-
   .hide-for-desktop {
     @include breakpoint-up(tablet) {
       display: none;
     }
-  }
 
-  .header__menu {
-    display: none;
-  }
 
+}
+
+.header__menu {
+  display: none;
+}
 
 }
 

@@ -6,12 +6,8 @@
 	video.onended = function (e) {
 		video.style.display = "none";
 		heroDiv.style.position = "unset";
-	};
 
-
-
-
-
+		
 let iconClose = "assets/shared/mobile/icon-close.svg";
 let iconOpen = "assets/shared/mobile/icon-hamburger.svg";
 
@@ -41,3 +37,8 @@ document.getElementById('closed').addEventListener('click', () => {
 	}
 
 });
+	};
+
+
+
+
