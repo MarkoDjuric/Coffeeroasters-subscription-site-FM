@@ -12,19 +12,19 @@ h4 {
 /* Headings colours & fonts */ 
 
 h1 {
-	line-height: clamp(4rem,6.22vw,7.2rem);
-	font-size:clamp(4rem, 6.22vw, 7.2rem);
-	// font-size: 4rem;
-	// line-height: 4rem;
+	// line-height: clamp(4rem,6.22vw,7.2rem);
+	// font-size:clamp(4rem, 6.22vw, 7.2rem);
+	font-size: 4rem;
+	line-height: 4rem;
 
-	// @include breakpoint-up(tablet){
-	// 	font-size: 4.8rem;
-	// 	line-height: 4.8rem;
-	//  }
-	//  @include breakpoint-up(desktop) {
-	// 	font-size: 7.2rem;
-	// 	line-height: 7.2rem;
-	//  }
+	@include breakpoint-up(tablet){
+		font-size: 4.8rem;
+		line-height: 4.8rem;
+	 }
+	 @include breakpoint-up(desktop) {
+		font-size: 7.2rem;
+		line-height: 7.2rem;
+	 }
 }
 	
 
@@ -67,6 +67,10 @@ h4 {
 	color:var(--txt-grey);
 }
 
+.h-l {
+	 line-height: clamp(2.8rem,5.195vw,4.8rem);
+	 font-weight: 900;
+}
 
 //Paragraphs colours
 
