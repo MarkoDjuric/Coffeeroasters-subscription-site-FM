@@ -1,0 +1,35 @@
+@use '../../util'as *;
+
+.quality {
+    max-width: 128rem;
+
+    .bg_img {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 80%;
+        border-radius: 1rem;
+        
+        height: 15.8rem;
+        transform: translateY(8rem);
+        margin-inline: auto;
+        background-image:url('../assets/about/mobile/image-quality.jpg');
+
+        @include breakpoint-up(tablet){
+            background-image:url('../assets/about/tablet/image-quality.jpg');
+            height: 32rem;
+        }
+        @include breakpoint-up(desktop){
+            background-image:url('../assets/about/desktop/image-quality.jpg');
+            height: 47.4rem;
+        }
+ 
+        
+
+    }
+
+    .bg_text {
+        background-color: var(--dark-grey-blue);
+    }
+
+}
