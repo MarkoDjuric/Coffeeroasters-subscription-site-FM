@@ -1,35 +1,118 @@
 @use '../../util'as *;
 
 .quality {
+    // position: relative;
     max-width: 128rem;
+    background-color: var(--dark-grey-blue);
+    border-radius: 1rem;
 
+    &__bg {
+        margin-top: 28rem;
+        display:grid;
+       
+
+        @include breakpoint-up(midesktop) {
+             
+             grid-template-columns: 1.35fr 1fr;
+             gap: 6.1rem;
+
+             .bg_img {
+                 grid-column: 2 / 3;
+                   
+            }
+
+            .bg_text{
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+                margin-top: 16rem;
+                text-align: left;
+
+                @include breakpoint-up(midesktop){
+                    margin-top: 6rem;
+                }
+
+            }
+        }
+               
     .bg_img {
+        background-image:url('../assets/about/mobile/image-quality.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        width: 80%;
+        width: 86%;
         border-radius: 1rem;
-        
         height: 15.8rem;
-        transform: translateY(8rem);
-        margin-inline: auto;
-        background-image:url('../assets/about/mobile/image-quality.jpg');
-
-        @include breakpoint-up(tablet){
+        transform: translateY(-8rem);
+        
+        place-self: center;
+        // margin-inline: auto;            
+        //   margin-left: 5.7rem;
+        //   margin-right: 5.8rem;
+        // position: absolute;
+        // top:-7.9rem;
+        // left:2.4rem;
+        // right:2.4rem;
+        @include breakpoint-up(mid){
             background-image:url('../assets/about/tablet/image-quality.jpg');
-            height: 32rem;
+            height:32rem;
+            transform: translateY(-8rem);
         }
+        @include breakpoint-up(midesktop){
+            justify-self: left; 
+        }
+            
+             
+                
         @include breakpoint-up(desktop){
             background-image:url('../assets/about/desktop/image-quality.jpg');
             height: 47.4rem;
+           
         }
+    }
  
-        
+    .bg_text {        
+        border-radius: 1rem;
+        text-align: center;
+        padding-top:-9.4rem;
+        padding-inline: 2.4rem;
+        padding-bottom: 6.1rem;
 
+        @include breakpoint-up(mid) {
+            padding-inline: 4.4rem;
+            padding-bottom: 6.4rem;
+        }
+        @include breakpoint-up(midesktop) {
+             text-align: left;
+        }
+            
+
+        @include breakpoint-up(tablet) {
+            padding-inline: 7.4rem;
+            padding-bottom: 6.7rem;
+        }
+        @include breakpoint-up(desktop) {
+            margin-top: 10.5rem;
+            padding-left: 8.5rem;
+            padding-bottom: 17.6rem;
+        }
+           
+
+         .bg_heading {
+            margin-top: -1.5rem;
+            padding-bottom: 2.4rem;
+
+            @include breakpoint-up(tablet) {
+                margin-top: -2.4rem;
+            }
+            @include breakpoint-up(tablet) {
+                padding-bottom: 3.2rem;
+            }
+
+                
+            
+        }
+       
     }
 
-    .bg_text {
-        background-color: var(--dark-grey-blue);
-    }
-
+}
 }

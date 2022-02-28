@@ -12,7 +12,7 @@
         
 
         .commitment__img {
-           display: block;
+            display: block;
             height: 40rem;
             width: 100%;  
             
@@ -35,15 +35,22 @@
         @include breakpoint-up(tablet) {
             // grid-template-columns: minmax(32.7rem, 44.5rem), minmax(32.7rem, 54rem);
             grid-template-columns: 1fr 1fr;
-            gap: 6.9rem;
+            column-gap: 6.9rem;
       
             .text {
                 place-self: center;
                 text-align: left;
+               
    
                 .commitment__text {
-                    
+                    width: 33.9rem;
                     font-weight:400;
+
+                @include breakpoint-up(desktop) {
+                        width: unset;
+                    }
+
+
                 }
             }
         }            
