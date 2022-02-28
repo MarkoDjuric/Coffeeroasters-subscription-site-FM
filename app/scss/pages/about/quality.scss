@@ -18,8 +18,8 @@
 
              .bg_img {
                  grid-column: 2 / 3;
-                   
             }
+                   
 
             .bg_text{
                 grid-column: 1 / 2;
@@ -32,6 +32,7 @@
                 }
 
             }
+            
         }
                
     .bg_img {
@@ -54,22 +55,21 @@
         // right:2.4rem;
         @include breakpoint-up(mid){
             background-image:url('../assets/about/tablet/image-quality.jpg');
-            height:32rem;
+            height:24rem;
             transform: translateY(-8rem);
+        }
+        @include breakpoint-up(tablet){
+            height:32rem;
         }
         @include breakpoint-up(midesktop){
             justify-self: left; 
         }
-            
-             
-                
         @include breakpoint-up(desktop){
             background-image:url('../assets/about/desktop/image-quality.jpg');
             height: 47.4rem;
-           
         }
     }
- 
+            
     .bg_text {        
         border-radius: 1rem;
         text-align: center;
@@ -94,9 +94,9 @@
             margin-top: 10.5rem;
             padding-left: 8.5rem;
             padding-bottom: 17.6rem;
+            padding-right: 6.6rem;
         }
            
-
          .bg_heading {
             margin-top: -1.5rem;
             padding-bottom: 2.4rem;
@@ -108,9 +108,11 @@
                 padding-bottom: 3.2rem;
             }
 
-                
-            
         }
+                
+        p {
+            max-width: 54rem;
+        }    
        
     }
 
