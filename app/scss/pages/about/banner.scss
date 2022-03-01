@@ -18,7 +18,6 @@
     //  height: 10vh;
     //  width:88%;
     //  background-color: white;
-
     .header__logo {
       img {
         width: clamp(16.2rem, 33vw, 23.6rem);
@@ -106,12 +105,10 @@
       }
       @include breakpoint-up(desktop) {
         max-width: 49.3rem;
-        
-        
       }
       
     }
-
+        
     .p-hw {
       margin-bottom: 3.9rem;
       max-width: 44.5rem;
