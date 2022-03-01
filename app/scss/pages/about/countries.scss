@@ -6,6 +6,7 @@
    
     &__heading {
         padding-bottom:7.2rem;
+        color:var(--links);
         @include breakpoint-up(tablet){
             text-align: left;
         }
@@ -19,11 +20,15 @@
         @include breakpoint-up(tablet){
             gap:0.9rem;
         }
+        @include breakpoint-up(desktop){
+            gap:9.5rem;
+        }
        
         & > * {
             text-align: center;
             @include breakpoint-up(tablet){
                 text-align: left;
+                place-self: flex-start;
             }
  
          }
@@ -35,7 +40,7 @@
                  
         span {
             display: block;
-            color:var(--links);
+            color: var(--countries-color);
             font-weight: 400;
             font-family: var(--font-p);
             font-size: 1.6rem;
