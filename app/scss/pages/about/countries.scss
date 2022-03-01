@@ -1,0 +1,23 @@
+@use '../../util'as *;
+
+.countries {
+    max-width: 140.5rem;
+    border: 0.2rem solid red;
+
+    &__list {
+        grid-template-columns: 1fr;
+        place-items: center;
+        text-align: center;
+        
+
+        span {
+            display: block;
+        }
+
+        & > * {
+text-align: center;
+
+        }
+    }
+
+}
