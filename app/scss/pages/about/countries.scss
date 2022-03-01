@@ -1,23 +1,56 @@
 @use '../../util'as *;
 
 .countries {
-    max-width: 140.5rem;
-    border: 0.2rem solid red;
-
-    &__list {
-        grid-template-columns: 1fr;
-        place-items: center;
-        text-align: center;
-        
-
-        span {
-            display: block;
-        }
-
-        & > * {
-text-align: center;
-
+    max-width: 104.5rem;
+    text-align: center;
+   
+    &__heading {
+        padding-bottom:7.2rem;
+        @include breakpoint-up(tablet){
+            text-align: left;
         }
     }
 
+    &__list {
+        grid-template-columns: 1fr;
+        gap: 8rem;
+        place-items: center;
+        text-align: center;
+        @include breakpoint-up(tablet){
+            gap:0.9rem;
+        }
+       
+        & > * {
+            text-align: center;
+            @include breakpoint-up(tablet){
+                text-align: left;
+            }
+ 
+         }
+
+        @include breakpoint-up(tablet){
+            grid-template-columns: 1.5fr 1fr 1fr;
+            text-align: left;
+        }
+                 
+        span {
+            display: block;
+            color:var(--links);
+            font-weight: 400;
+            font-family: var(--font-p);
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+
+            &:not(:last-child) {
+                margin-bottom:0.7rem;
+            }
+        }
+
+    }
+
+    .list_heading {
+        margin-top: 4.73rem;
+        margin-bottom: 2.2rem;
+    }
 }
+       
