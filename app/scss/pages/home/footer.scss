@@ -4,6 +4,7 @@
 .footer {
     background-color: var(--dark-grey-blue);
     max-width: 128rem;
+    
     @include breakpoint-up(tablet) {
         margin-top: 14rem;
     }
