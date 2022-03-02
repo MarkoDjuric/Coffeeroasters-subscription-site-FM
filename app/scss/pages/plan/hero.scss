@@ -1,7 +1,6 @@
 @use '../../util'as *;
 
 
-
 .header {
   max-width: 128rem;
   position: relative;
@@ -14,12 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // on scroll down
-    //  position: fixed;
-    //  top:0;
-    //  height: 10vh;
-    //  width:88%;
-    //  background-color: white;
+
     .header__logo {
       img {
         width: clamp(16.2rem, 33vw, 23.6rem);
@@ -27,7 +21,7 @@
     }
   }
 
-  &__about {
+  &__plan {
     max-width: 128rem;
     display: flex;
     justify-content: center;
@@ -43,21 +37,21 @@
     }
 
     margin-top:4rem;
-    background-image: url('../assets/about/mobile/image-hero-whitecup.jpg');
+    background-image: url('../assets/plan//mobile/image-hero-blackcup.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 40rem;
 
     @include breakpoint-up(tablet) {
-      background-image: url('../assets/about/tablet/image-hero-whitecup.jpg');
+      background-image: url('../assets/plan//tablet/image-hero-blackcup.jpg');
     }
 
     @include breakpoint-up(desktop) {
-      background-image: url('../assets/about/desktop/image-hero-whitecup.jpg');
+      background-image: url('../assets/plan/desktop/image-hero-blackcup.jpg');
     }
 
-    .about_wrap {    
+    .plan_wrap {    
       max-width: 50rem;
       display: flex;
       justify-content: center;
@@ -80,7 +74,7 @@
   }
 
 
-  &__about {
+  &__plan {
     position: relative;
     padding-left: 2.4rem;
     padding-right: 2.4rem;
