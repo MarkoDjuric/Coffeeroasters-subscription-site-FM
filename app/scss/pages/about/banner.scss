@@ -69,15 +69,15 @@
         display: block;
       }
             
-      @include breakpoint-up(tablet){
+    //   @include breakpoint-up(tablet){
         
-        p {
-            max-width: 39.8rem;
-        }
-     }
+
+    //  }
 
     }
-    
+    p {
+      max-width: 39.8rem;
+  }
   }
 
 
@@ -101,10 +101,10 @@
     .h-w {
       margin-bottom: 2.4rem;
       @include breakpoint-up(tablet) {
-        max-width: 32.9rem;
+       width: 32.9rem;
       }
       @include breakpoint-up(desktop) {
-        max-width: 49.3rem;
+        width: 49.3rem;
       }
       
     }
