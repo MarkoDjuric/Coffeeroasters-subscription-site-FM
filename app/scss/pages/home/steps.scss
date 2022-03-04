@@ -101,17 +101,14 @@
                 
                 @include breakpoint-up(mid) {
                   width: 95%;
-                
-                    height:15rem;
-                    
-                    margin-inline: 0;
+                  height:15rem;
+                  margin-inline: 0;
                 }
-
+                
                 @include breakpoint-up(tablet) {
                      max-width: 23.3rem;
-                     
                 }
-
+                     
                 @include breakpoint-up(desktop) {
                     max-width: 28.5rem;
                     height: 13rem;
@@ -119,6 +116,9 @@
             }
 
         }
+                
+                    
+
 
 
     }

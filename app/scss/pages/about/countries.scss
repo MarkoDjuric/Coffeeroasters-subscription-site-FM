@@ -30,9 +30,8 @@
                 text-align: left;
                 place-self: flex-start;
             }
+        }
  
-         }
-
         @include breakpoint-up(tablet){
             grid-template-columns: 1.5fr 1fr 1fr;
             text-align: left;
