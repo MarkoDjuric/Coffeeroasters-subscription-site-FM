@@ -2,13 +2,28 @@
 @use '../home'as *;
 
 .step {
+    background-color:var(--txt-grey);
+    max-width: 128rem;
     height: 102.8rem;
+   
     border-radius: 1rem;
-    
+    // padding: 8rem 2.4rem;
+  
+    // @include breakpoint-up(mid){
+    //     padding-inline:4rem;
+    //     padding-top: 17.6rem;
+    //     padding-bottom: 9.6rem;
+    // }
+    // @include breakpoint-up(desktop){
+    //     padding-top: 19.8rem;
+    //     padding-left: 8.5rem;
+    //     padding-right: 15rem;
+    //     padding-bottom: 10rem;
+    // }
     @extend .steps; 
 
-        max-width: 128rem;
-        background-color:var(--txt-grey);
+      
+        
         margin-top: 12rem;
         
         @include breakpoint-up(mid) {
@@ -28,19 +43,34 @@
            
         }
 .steps__wrapp {
+   
    padding: 8rem 2.4rem;
-  
+ 
+ 
     @include breakpoint-up(mid){
         padding-inline:4rem;
         padding-top: 17.6rem;
         padding-bottom: 9.6rem;
+        column-gap: 0.5rem;
+    }
+    @include breakpoint-up(tablet){
+        column-gap: 0;
     }
     @include breakpoint-up(desktop){
-        padding: 19.8rem 8.5rem;
+        padding-top: 19.8rem;
+        padding-left: 11rem;
+        padding-right: 15rem;
+        padding-bottom: 10rem;
+        column-gap: 9.5rem;
     }
     h3 {
         color: var(--hero-white);
     }
+    }
+    @include breakpoint-up(desktop){
+        .noline::after {
+            width: 124%;
+          }
     }
 
       }
