@@ -21,5 +21,11 @@ button {
       &:hover {
         background-color: var(--cyan-hover);
       }
+      &:focus {
+        outline-style: solid;
+        outline-color:rgb(46, 38, 35);
+        border: dashed;
+       
+      }
 
 }
