@@ -89,5 +89,146 @@
 			
 		</div>
 	</section>
+	<section class="create-plan container">
+
+		<h2 class="hidden-visually">Create your plan</h2>
+		<nav class="create-plan__nav" aria-hidden="true">
+		  <ol>
+			<li class="create-plan__nav__item">      
+			  <a href="#form-preferences" class="create-plan__nav__item__link" tabindex="-1">Preferences</a>
+			</li>
+			<li class="create-plan__nav__item">
+			  <a href="#form-bean-type" class="create-plan__nav__item__link" tabindex="-1">Bean type</a>
+			</li>
+			<li class="create-plan__nav__item">
+			  <a href="#form-quantity" class="create-plan__nav__item__link" tabindex="-1">Quantity</a>
+			</li>
+			<li class="create-plan__nav__item">
+			  <a href="#form-grind" class="create-plan__nav__item__link" tabindex="-1">Grind option</a>
+			</li>
+			<li class="create-plan__nav__item">
+			  <a href="#form-deliveries" class="create-plan__nav__item__link" tabindex="-1">Deliveries</a>
+			</li>
+		  </ol>      
+		</nav>
+		<form class="js-form" id="subscription-form">
+		  <div>
+			<button type="button" id="form-preferences" aria-controls="coffee-preferences" aria-expanded="false" class="create-plan__group__toggle js-accordion-toggle">
+			  <h3 class="create-plan__group__toggle__text">How do you drink your coffee?</h3>
+			  <span><img src="/assets/plan/desktop/icon-arrow.svg" alt="" class="create-plan__group__toggle__icon"></span>
+			</button>
+			<fieldset class="create-plan__form__options" id="coffee-preferences">
+			  <legend class="hidden-visually">Choose coffee preference</legend>
+			  
+			  <input type="radio" name="preferences" value="capsules" id="capsule" class="create-plan__form__radio js-capsule hidden-visually" tabindex="-1" required="">
+			  <label for="capsule" class="create-plan__form__label">Capsule<span class="create-plan__form__details">Compatible with Nespresso systems and similar brewers</span></label>
+	
+			  <input type="radio" name="preferences" value="filter" id="filter" class="create-plan__form__radio hidden-visually" tabindex="-1" required="">
+			  <label for="filter" class="create-plan__form__label">Filter<span class="create-plan__form__details">For pour over or drip methods like Aeropress, Chemex, and V60</span></label>
+	
+			  <input type="radio" name="preferences" value="espresso" id="espresso" class="create-plan__form__radio hidden-visually" tabindex="-1" required="">
+			  <label for="espresso" class="create-plan__form__label">Espresso<span class="create-plan__form__details">Dense and finely ground beans for an intense, flavorful experience</span></label>
+	
+			</fieldset>
+		  </div>
+		  <div>
+			<button type="button" id="form-bean-type" aria-controls="bean-type" aria-expanded="false" class="create-plan__group__toggle js-accordion-toggle">
+			  <h3 class="create-plan__group__toggle__text">What type of coffee?</h3>
+			  <span><img src="/assets/plan/desktop/icon-arrow.svg" alt="" class="create-plan__group__toggle__icon"></span>
+			</button>
+			<fieldset class="create-plan__form__options" id="bean-type">
+			  <legend class="hidden-visually">Choose bean type</legend>
+	
+			  <input type="radio" name="bean-type" value="single origin" id="single-origin" class="create-plan__form__radio hidden-visually" tabindex="-1" required="">
+			  <label for="single-origin" class="create-plan__form__label">Single origin<span class="create-plan__form__details">Distinct, high quality coffee from a specific family-owned farm</span></label>
+			  
+			  <input type="radio" name="bean-type" value="decaf" id="decaf" class="create-plan__form__radio hidden-visually" tabindex="-1" required="">
+			  <label for="decaf" class="create-plan__form__label">Decaf<span class="create-plan__form__details">Just like regular coffee, except the caffeine has been removed</span></label>
+			
+			  <input type="radio" name="bean-type" value="blended" id="blended" class="create-plan__form__radio hidden-visually" tabindex="-1" required="">
+			  <label for="blended" class="create-plan__form__label">Blended<span class="create-plan__form__details">Combination of two or three dark roasted beans of organic coffees</span></label>
+			  
+			</fieldset>
+		  </div>
+		  <div>
+			<button type="button" id="form-quantity" aria-controls="coffee-quantity" aria-expanded="false" class="create-plan__group__toggle js-accordion-toggle">
+			  <h3 class="create-plan__group__toggle__text">How much would you like?</h3>
+			  <span><img src="/assets/plan/desktop/icon-arrow.svg" alt="" class="create-plan__group__toggle__icon"></span>
+			</button>
+			<fieldset class="create-plan__form__options" id="coffee-quantity">
+			  <legend class="hidden-visually">Choose quantity</legend>
+				
+			  <input type="radio" name="quantity" value="250g" id="250g" class="create-plan__form__radio hidden-visually" tabindex="-1" required="">
+			  <label for="250g" class="create-plan__form__label">250g<span class="create-plan__form__details">Perfect for the solo drinker. Yields about 12 delicious cups.</span></label>
+						  
+			  <input type="radio" name="quantity" value="500g" id="500g" class="create-plan__form__radio hidden-visually" tabindex="-1" required="">
+			  <label for="500g" class="create-plan__form__label">500g<span class="create-plan__form__details">Perfect option for a couple. Yields about 40 delectable cups.</span></label>
+	
+			  <input type="radio" name="quantity" value="1000g" id="1000g" class="create-plan__form__radio hidden-visually" tabindex="-1" required="">
+			  <label for="1000g" class="create-plan__form__label">1000g<span class="create-plan__form__details">Perfect for offices and events. Yields about 90 delightful cups.</span></label>
+	
+			</fieldset>
+		  </div>
+		  <div>
+			<button type="button" id="form-grind" aria-controls="grind" aria-expanded="false" class="create-plan__group__toggle js-accordion-toggle js-grind-toggle">
+			  <h3 class="create-plan__group__toggle__text">Want us to grind them?</h3>
+			  <span><img src="/assets/plan/desktop/icon-arrow.svg" alt="" class="create-plan__group__toggle__icon"></span>
+			</button>
+			<fieldset class="create-plan__form__options" id="grind">
+			  <legend class="hidden-visually">Choose type of grind</legend>
+	
+			  <input type="radio" name="grind" value="wholebean" id="wholebean" class="create-plan__form__radio hidden-visually js-grind-input" tabindex="-1" required="">
+			  <label for="wholebean" class="create-plan__form__label">Wholebean<span class="create-plan__form__details">Best choice if you cherish the full sensory experience</span></label>
+	
+			  <input type="radio" name="grind" value="filter" id="filter-grind" class="create-plan__form__radio hidden-visually js-grind-input" tabindex="-1" required="">
+			  <label for="filter-grind" class="create-plan__form__label">Filter<span class="create-plan__form__details">For drip or pour-over coffee methods such as V60 or Aeropress</span></label>
+	
+			  <input type="radio" name="grind" value="cafetiére" id="cafetiere" class="create-plan__form__radio hidden-visually js-grind-input" tabindex="-1" required="">
+			  <label for="cafetiere" class="create-plan__form__label">Cafetiére<span class="create-plan__form__details">Coarse ground beans specially suited for french press coffee</span></label>
+	
+			</fieldset>
+		  </div>
+		  <div>
+			<button type="button" id="form-deliveries" aria-controls="delivery" aria-expanded="false" class="create-plan__group__toggle js-accordion-toggle">
+			  <h3 class="create-plan__group__toggle__text">How often should we deliver?</h3>
+			  <span><img src="/assets/plan/desktop/icon-arrow.svg" alt="" class="create-plan__group__toggle__icon"></span>
+			</button>
+			<fieldset class="create-plan__form__options" id="delivery">
+			  <legend class="hidden-visually">Choose delivery frequency</legend>
+			  
+			  <input type="radio" name="delivery" value="every week" id="every-week" class="create-plan__form__radio hidden-visually" tabindex="-1" required="">
+			  <label for="every-week" class="create-plan__form__label">Every week<span class="create-plan__form__details"><span class="js-weekly-price"></span><span class="js-price-text">Select quantity to view price.</span> Includes free first-class shipping.</span></label>
+		  
+			  <input type="radio" name="delivery" value="every 2 weeks" id="every-2-weeks" class="create-plan__form__radio hidden-visually" tabindex="-1" required="">
+			  <label for="every-2-weeks" class="create-plan__form__label">Every 2 weeks<span class="create-plan__form__details"><span class="js-biweekly-price"></span><span class="js-price-text">Select quantity to view price.</span> Includes free priority shipping.</span></label>
+		
+			  <input type="radio" name="delivery" value="every month" id="every-month" class="create-plan__form__radio hidden-visually" tabindex="-1" required="">
+			  <label for="every-month" class="create-plan__form__label">Every month<span class="create-plan__form__details"><span class="js-monthly-price"></span><span class="js-price-text">Select quantity to view price.</span> Includes free priority shipping.</span></label>
+	
+			</fieldset>
+		  </div>
+		  <div class="order-summary" tabindex="0">
+			<h3 class="order-summary__heading">
+			  order summary
+			</h3>
+			<div class="order-summary__text order-summary__text--light js-summary">
+			  <p>
+				“I drink my coffee 
+				<span class="js-preference-intro">as<!--as/using--></span>
+				<span class="order-summary__choice js-preference">_____</span>, 
+				with a 
+				<span class="order-summary__choice js-bean-type">_____</span> 
+				type of bean. 
+				<span class="order-summary__choice js-quantity">_____</span>
+				<span class="js-grind-intro"> ground ala</span>
+				<span class="order-summary__choice js-grind">_____</span>, sent to me 
+				<span class="order-summary__choice js-delivery">every month</span>.”
+			  </p>
+			</div>
+		  </div>
+		  <button type="button" class="button button-disabled create-plan__form__submit js-form-confirm" disabled="">Create my plan!</button>
+		</form>
+	  
+	</section>
 </body>
 </html>
