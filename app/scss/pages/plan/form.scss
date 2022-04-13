@@ -1,4 +1,58 @@
 @use '../../util'as *;
 @use '../home'as *;
 
+.create-plan {
+    
+    @include breakpoint-up(desktop){
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 16rem 1fr;
+        grid-template-columns: 16rem 1fr;
+        gap: 7.5rem;
+        padding-inline: 16.5rem;
+    }
+}
 
+
+ .create-plan__nav__item {
+    // display: none;
+   
+
+    ol,ul {
+        list-style-type: none;
+        padding-inline-start: 0;
+    }
+}
+.create-plan__nav__item {
+    width: 100%;
+    padding: 2.4rem 0;
+    counter-increment: subscription-form-nav;
+    opacity: 0.5;
+    &:hover {
+        color: #333D4B;
+        opacity: 1;
+    }
+
+  }
+.create-plan__nav__item:not(:last-of-type) {
+    border-bottom: 1px solid #83888f;
+  }
+
+  .create-plan__nav__item::before {
+    content: "0" counter(subscription-form-nav);
+    margin-right: 2.4rem;
+    font-family: "Fraunces", serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2rem;
+    opacity: 0.5;
+
+
+  }
+
+  .create-plan__nav__item__link {
+    font-size: 2.4rem;
+    line-height: 2rem;
+    font-family: "Fraunces", serif;
+    text-transform: none;
+  }

@@ -25,7 +25,6 @@
     }
   }
 
-
   &__about {
     max-width: 128rem;
     display: flex;
@@ -70,8 +69,6 @@
       }
             
     //   @include breakpoint-up(tablet){
-        
-
     //  }
 
     }
@@ -170,7 +167,6 @@
     box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
 
   }
-
 
   .hide-for-mobile {
     display: none;
