@@ -71,10 +71,18 @@
 }	
 				
 let btnAccordion = document.querySelectorAll('.js-accordion-toggle');
+let dropField = document.getElementsByClassName('hidden');
 
 btnAccordion.forEach((el)=>{
-el.addEventListener('click', ()=> {
-	this.toggle("vissible")
+	el.addEventListener('click', function() {
+	let state = this.nextElementSibling;
+	// this.classList.toggle("vissible");
+	
+	if(state.style.display=== "block"){
+		state.style.display='none'
+	}else {
+		state.style.display='block'
+	}
 	});
 });
 
