@@ -1,3 +1,5 @@
+// Button accordion
+
 
 
 	// Removing video background
@@ -10,6 +12,8 @@
 	let logo = document.getElementById("logo");
 	let video = document.getElementsByTagName('video')[0];
 	
+
+
 	
 	if (video === undefined) {
 		
@@ -66,8 +70,13 @@
 	};
 }	
 				
+let btnAccordion = document.querySelectorAll('.js-accordion-toggle');
 
-
+btnAccordion.forEach((el)=>{
+el.addEventListener('click', ()=> {
+	this.toggle("vissible")
+	});
+});
 
 
 
