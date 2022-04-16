@@ -78,10 +78,13 @@ btnAccordion.forEach((el)=>{
 	let state = this.nextElementSibling;
 	// this.classList.toggle("vissible");
 	
-	if(state.style.display=== "block"){
-		state.style.display='none'
+	if(state.style.display === "block"){
+		state.style.display='none';
+		console.log(this.firstChild.nextElementSibling.nextElementSibling.firstChild.classList.remove("rotate"))
 	}else {
-		state.style.display='block'
+		state.style.display='block';
+		console.log(this.firstChild.nextElementSibling.nextElementSibling.firstChild.classList.add("rotate"))
+		
 	}
 	});
 });
