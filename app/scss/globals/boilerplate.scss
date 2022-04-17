@@ -40,11 +40,11 @@ picture {
 	max-width: 100%;
 }
 
+// Smoke animation
 .span_smoke {
 	opacity: 1;
     animation: amin 1s;
-    // display: inline-block;
-
+    
     @keyframes  amin{
 
         0%{
