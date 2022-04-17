@@ -61,3 +61,51 @@
   .create-plan__form__options {
     transition: all 600ms;
   }
+
+  .create-plan__group__toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    @include breakpoint-up(medium) {
+        margin-bottom: 1.5rem;
+    }
+
+    @include breakpoint-up(large) {
+        margin-bottom: 2.5rem;
+    }
+
+    &:focus  {
+        outline: none;
+
+        & >.create-plan__group__toggle__text {
+            color: var(--dark-grey-blue);
+
+            &::after {
+                height: 2px;
+                width: 100%;
+            }
+        }
+
+    }
+
+    &:hover {
+        & .create-plan__group__toggle__text {
+            color: var(--dark-grey-blue);
+        }
+    }
+
+    &:disabled {
+        & .create-plan__group__toggle__text {
+            color: var(--txt-grey);
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    }
+  }
