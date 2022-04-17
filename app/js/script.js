@@ -81,6 +81,7 @@ btnAccordion.forEach((el)=>{
 	if(state.style.display === "block"){
 		state.style.display='none';
 		console.log(this.firstChild.nextElementSibling.nextElementSibling.firstChild.classList.remove("rotate"))
+		
 	}else {
 		state.style.display='block';
 		console.log(this.firstChild.nextElementSibling.nextElementSibling.firstChild.classList.add("rotate"))
