@@ -72,7 +72,7 @@ h4 {
 	 font-weight: 900;
 }
 
-//Paragraphs colours
+//------Paragraphs colours--------\\
 
 .p-g {
 	color: var(--txt-grey);
@@ -108,7 +108,7 @@ h4 {
 }
 
 
-//Nav Anchors
+//---------Nav Anchors---------\\
 a,
 a:visited,
 a:active {
@@ -212,18 +212,29 @@ svg {
 			width: 92%;
 		}
 
+	}
 
 }
 
-}
 
 
 
 .hidden {
-display: none;
+	display: none;
 }
 
 .rotate {
 	transform: rotate(180deg);
 	transition: 300ms linear all;
 }
+
+.hidden-visually {
+	clip: rect(0 0 0 0);
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+  }
